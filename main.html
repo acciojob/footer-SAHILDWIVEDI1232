@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Company Footer</title>
+  <title>Footer Example</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <style>
     * {
@@ -54,7 +54,7 @@
       font-size: 18px;
     }
 
-    .footer-container {
+    .link-boxes {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -90,7 +90,7 @@
     }
 
     @media screen and (max-width: 768px) {
-      .footer-top, .footer-container {
+      .footer-top, .link-boxes {
         flex-direction: column;
         align-items: flex-start;
       }
@@ -103,53 +103,52 @@
 </head>
 <body>
 
-<footer>
-
-  <div class="footer-top">
-    <div class="company-name">company</div>
-    <div class="media-icons">
-      <a href="#" class="fa fa-facebook" aria-label="Facebook"></a>
-      <a href="#" class="fa fa-twitter" aria-label="Twitter"></a>
-      <a href="#" class="fa fa-instagram" aria-label="Instagram"></a>
-      <a href="#" class="fa fa-linkedin" aria-label="LinkedIn"></a>
-      <a href="#" class="fa fa-youtube-play" aria-label="YouTube"></a>
-    </div>
-  </div>
-
-  <div class="footer-container">
-    <div class="footer-section">
-      <h3>Links</h3>
-      <a href="#">Home</a>
-      <a href="#">Contact</a>
-      <a href="#">About Us</a>
-      <a href="#">Get Started</a>
+  <!-- Footer start -->
+  <footer>
+    <div class="footer-top">
+      <div class="company-name">company</div>
+      <div class="media-icons">
+        <a href="#" class="fa fa-facebook" aria-label="Facebook"></a>
+        <a href="#" class="fa fa-twitter" aria-label="Twitter"></a>
+        <a href="#" class="fa fa-instagram" aria-label="Instagram"></a>
+        <a href="#" class="fa fa-linkedin" aria-label="LinkedIn"></a>
+        <a href="#" class="fa fa-youtube-play" aria-label="YouTube"></a>
+      </div>
     </div>
 
-    <div class="footer-section">
-      <h3>Services</h3>
-      <a href="#">App Design</a>
-      <a href="#">Web Design</a>
-      <a href="#">Logo Design</a>
-      <a href="#">Banner Design</a>
-    </div>
+    <div class="link-boxes">
+      <div class="footer-section">
+        <h3>Links</h3>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">About Us</a>
+        <a href="#">Get Started</a>
+      </div>
 
-    <div class="footer-section">
-      <h3>Other services</h3>
-      <a href="#">SEO</a>
-      <a href="#">Content Marketing</a>
-      <a href="#">Prints</a>
-      <a href="#">Social Media</a>
-    </div>
+      <div class="footer-section">
+        <h3>Services</h3>
+        <a href="#">App Design</a>
+        <a href="#">Web Design</a>
+        <a href="#">Logo Design</a>
+        <a href="#">Banner Design</a>
+      </div>
 
-    <div class="footer-section">
-      <h3>Contact</h3>
-      <p>+91 8879887262</p>
-      <p>+91 8879887262</p>
-		<p>contact@company.com</p>
-    </div>
-  </div>
+      <div class="footer-section">
+        <h3>Other services</h3>
+        <a href="#">SEO</a>
+        <a href="#">Content Marketing</a>
+        <a href="#">Prints</a>
+        <a href="#">Social Media</a>
+      </div>
 
-</footer>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>+91 8879887262</p>
+        <p>+91 8879887262</p>
+        <p>contact@company.com</p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
