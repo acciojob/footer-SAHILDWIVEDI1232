@@ -1,35 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Company Footer</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  <body>
-    <footer>
-      <div class="content">
-        <div class="top">
-          <div class="logo-details">
-            <span class="logo_name">company</span>
-          </div>
-          <div class="media-icons">
-            <!-- your code here -->
-          </div>
-        </div>
-        <div class="link-boxes">
-          <!-- your code here -->
-        </div>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    footer {
+      background-color: #1f1f1f;
+      color: #fff;
+      padding: 40px 20px;
+    }
+
+    /* Top Row: Logo Left, Social Icons Right */
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto 30px auto;
+    }
+
+    .company-name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #00aced;
+    }
+
+    .media-icons {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .media-icons a {
+      width: 35px;
+      height: 35px;
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .media-icons a:hover {
+      background-color: #00aced;
+    }
+
+    /* Footer Sections */
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-section {
+      flex: 1 1 200px;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 15px;
+      font-size: 18px;
+      color: #00aced;
+    }
+
+    .footer-section a {
+      display: block;
+      margin-bottom: 8px;
+      text-decoration: none;
+      color: #ccc;
+      font-size: 14px;
+    }
+
+    .footer-section a:hover {
+      color: #fff;
+    }
+
+    .contact-number {
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    @media screen and (max-width: 768px) {
+      .footer-top,
+      .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .media-icons {
+        margin-top: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <footer>
+
+    <!-- TOP ROW: Company + Icons -->
+    <div class="footer-top">
+      <div class="company-name">MyCompany</div>
+      <div class="media-icons">
+        <a href="#" class="fa fa-facebook" aria-label="Facebook"></a>
+        <a href="#" class="fa fa-twitter" aria-label="Twitter"></a>
+        <a href="#" class="fa fa-instagram" aria-label="Instagram"></a>
+        <a href="#" class="fa fa-linkedin" aria-label="LinkedIn"></a>
+        <a href="#" class="fa fa-youtube-play" aria-label="YouTube"></a>
       </div>
-      <div class="bottom-details">
-        <!-- your code here -->
+    </div>
+
+    <!-- BOTTOM ROW: SECTIONS -->
+    <div class="footer-container">
+
+      <div class="footer-section">
+        <h3>Home</h3>
+        <a href="#">Homepage</a>
+        <a href="#">Updates</a>
+        <a href="#">News</a>
       </div>
-    </footer>
-  </body>
-</html>
+
+      <div class="footer-section">
+        <h3>About</h3>
+        <a href="#">Company Info</a>
+        <a href="#">Our Team</a>
+        <a href="#">Careers</a>
+      </div>
+
+      <div class="footer-section">
+        <h3>Links</h3>
+        <a href="#">Blog</a>
+        <a href="#">FAQs</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+
+      <div class="footer-section">
+        <h3>Services</h3>
+        <a href="#">Web Development</a>
+        <a href="#">Digital Marketing</a>
+        <a href="#">Brand Strategy</a>
+        <a
